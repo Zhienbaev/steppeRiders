@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="icon" href="../pcs/logoBlack.png" type="image/png">
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <title>SteppeRiders</title>
+</head>
+<body>
+    <div class="header" style="background-image: url(../pcs/headerCarMain.jpg);">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="../pcs/logoWhite.png" alt="" class="logo">
+                <h2>
+                    <span class="name-header">
+                        SteppeRiders
+                    </span>
+                 </h2>
+            </div>
+            <div class="menu">
+                <a href="../main.html" class="moto-menu" >Мотоциклы</a>
+                <a href="#" class="car-menu" style="border: 2px solid white;">Машины</a>
+                <a href="about.html" class="about-me">Кто я?</a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-icon" id="burger-icon">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="burger-menu-btn">
+        <a href="../main.html" class="moto-menu" >Мотоциклы</a>
+        <a href="cars.html" class="car-menu" style="margin-top: 10px; margin-bottom: 10px; border: 2px solid white;">Машины</a>
+        <a href="about.html" class="about-me">Кто я?</a>
+    </div>
+    <div id="content" class="content" style="background-color: rgb(86, 39, 67);">
+        <div id="content-container" class="content-container">
+            <form id="myForm" class="new-card" method="post" enctype="multipart/form-data">
+                <div class="img-new-card">
+                    <input type="file" id="fileUpload" name="fileUpload" class="file">
+                </div>
+                <input type="text" class="name-moto" name="name" placeholder="Название машины">
+                <textarea type="textarea" class="moto-description" name="description" placeholder="Описание JDM"></textarea>
+                <input type="submit" value="Загрузить" class="submit">
+            </form> 
+            <div class="card">
+                <div class="card-img" style="background-image: url(../pcs/mark2.jpg);"></div>
+                <div class="card-content">
+                    <h2>
+                        <span class="card-name">
+                            Toyota Mark II
+                        </span>
+                    </h2>
+                    <div class="card-description">
+                        Toyota Mark II (яп. トヨタ・マークII) — четырёхдверный среднеразмерный седан, выпускавшийся компанией Toyota с 1968 по 2004 годы. Наименование Mark II использовалось компанией Toyota на протяжении нескольких десятилетий и первоначально использовалось в составе названия Toyota Corona Mark II. Отметка II была введена, чтобы машина выделялась из основной платформы Toyota Corona. Как только в 1970-е годы платформа была разделена, автомобиль стал известен просто как Mark II.
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <span class="footer-txt">
+                ©️ 2023-2024 Zhienbaev Aidyn, SteppeRiders.co
+            </span>
+        </div>
+    </div>
+    <script src="../script.js"></script>
+</body>
+</html>

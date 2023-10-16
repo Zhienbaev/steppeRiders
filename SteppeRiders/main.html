@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Kanit:wght@500&display=swap" rel="stylesheet">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Russo+One&display=swap" rel="stylesheet">
+    <link rel="icon" href="pcs/logoBlack.png" type="image/png">
+    <title>SteppeRiders</title>
+</head>
+<body>
+    <div class="header">
+        <div class="header-container">
+            <div class="header-logo">
+                <img src="pcs/logoWhite.png" alt="" class="logo">
+                <h2>
+                    <span class="name-header">
+                        SteppeRiders
+                    </span>
+                 </h2>
+            </div>
+            <div class="menu">
+                <a href="#" class="moto-menu" style="border: 2px solid white;">Мотоциклы</a>
+                <a href="pages/cars.html" class="car-menu">Машины</a>
+                <a href="pages/about.html" class="about-me">Кто я?</a>
+            </div>
+            <div class="burger-menu">
+                <div class="burger-icon" id="burger-icon">
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                  <div class="bar"></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="menu" class="burger-menu-btn">
+        <a href="main.html" class="moto-menu" style="border: 2px solid white;">Мотоциклы</a>
+        <a href="pages/cars.html" class="car-menu" style="border-left:none; border-right: none; margin-top: 10px; margin-bottom: 10px;">Машины</a>
+        <a href="pages/about.html" class="about-me" >Кто я?</a>
+    </div>
+    <div id="content" class="content">
+        <div id="content-container" class="content-container">
+            <form id="myForm" class="new-card" method="post" enctype="multipart/form-data">
+                <div class="img-new-card">
+                    <input type="file" id="fileUpload" name="fileUpload" class="file">
+                </div>
+                <input type="text" class="name-moto" name="name" placeholder="Название мотоцикла">
+                <textarea type="textarea" class="moto-description" name="description" placeholder="Описание"></textarea>
+                <input type="submit" value="Загрузить" class="submit">
+            </form> 
+            <div class="card">
+                <div class="card-img" style="background-image: url(pcs/r1.jpg);"></div>
+                <div class="card-content">
+                    <h2>
+                        <span class="card-name">
+                            Yamaha R1
+                        </span>
+                    </h2>
+                    <div class="card-description">
+                        Модель Yamaha YZF-R1 выпущена в красно-белом и синем вариантах. Коэффициент сжатия у мотоцикла 7.4:1. при 5-ступенчатой коробке передач. Современная Ямаха считает R1 примером настоящего «Kando». («Kando» — это японское слово для обозначения одновременных чувств радости и волнения, которое испытывает человек, когда сталкивается с явлением исключительной ценности).
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+
+    <div class="footer">
+        <div class="footer-container">
+            <span class="footer-txt">
+                ©️ 2023-2024 Zhienbaev Aidyn, SteppeRiders.co
+            </span>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

@@ -1,0 +1,434 @@
+body{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+}
+.logo-doc{
+    border-radius: 50%;
+}
+a{
+    text-decoration: none;
+}
+
+        /*header*/
+
+.burger-menu {
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 20px;
+    background-color: #333;
+    color: #fff;
+    }
+    
+.burger-icon {
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+    
+.bar {
+    width: 25px;
+    height: 3px;
+    background-color: #fff;
+    margin: 3px 0;
+}
+
+.burger-menu-btn{
+    display: none;
+    position: absolute;
+    flex-direction: column;
+    width: 200px;
+    background-color: #333333eb;
+    padding: 10px;
+    right: 50px;
+    bottom: 500px;
+}
+
+.header{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    width: 100%;
+    height: 100px;
+    background-image: url(pcs/headerMain.jpg);
+    background-size: cover;
+    justify-content: center;
+}
+.header-container{
+    display: flex;
+    width: 1080px;
+    height: 200px;
+    justify-content: space-between;
+    align-items: center;
+    text-align: center;
+}
+.header-logo{
+    display: flex;
+    text-align: center;
+    align-items: center;
+}
+.name-header{
+    color: white;
+    font-weight:500;
+    font-family: Kanit;
+}
+.logo{
+    width: 50px;
+    height: 50px;
+}
+
+.menu{
+    display: flex;
+}
+
+.moto-menu{
+    color: white;
+    padding: 0 20px;
+    font-family: 'Russo one';
+}
+.moto-menu:hover {
+    border-bottom: 2px solid white;
+}
+.moto-menu:focus {
+    border-bottom: 2px solid white;
+    border: 2px solid white;
+}
+.car-menu{
+    color: white;
+    padding: 0 20px;
+    border-right: 2px solid white ;
+    border-left: 2px solid white ;
+    transition: 0.3ms ease;
+    font-family: 'Russo one';
+}
+.car-menu:hover {
+    border-bottom: 2px solid white;
+}
+.about-me{
+    color: white;
+    padding: 0 20px;
+    transition: 0.3ms ease;
+    font-family: 'Russo one';
+}
+.about-me:hover {
+    border-bottom: 2px solid white;
+}
+        /*content*/
+.content {
+    display: flex;
+    padding-top: 20px;
+    width: 100%;
+    min-height: 100vh;
+    justify-content: center;
+    background-color: rgb(84, 27, 27);
+    background-repeat: repeat;
+}
+.content-container{
+    display: flex;
+    flex-wrap: wrap;
+    width: 1080px;
+    height: 100%;
+    justify-content: center;
+    margin-bottom: 20px;
+}
+.item {
+    flex: 1; /* Элементы с классом "item" будут занимать равные части доступного пространства внутри контейнера */
+}
+.card{
+    display:  flex;
+    flex-direction: column;
+    min-width: 300px;
+    max-width: 400px;
+    height: 460px;
+    background-color: rgb(251,251,237) ;
+    border: 2px solid rgb(251,251,237);
+    border-radius: 3px;
+    margin: 20px;
+}
+.card-img{
+    max-width: 400px;
+    height: 260px;
+    background-size: cover;
+}
+.card-content{
+    padding: 0 20px;
+    height: 300px;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+        /*new-card*/
+.new-card{
+    margin: 20px;
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    height: 460px;
+    align-items: center;
+    background-color: rgb(251,251,237) ;
+    border: 2px solid rgb(251,251,237);
+    border-radius: 3px;
+}
+.img-new-card{
+    width: 300px;
+    height: 150px;
+    background-color: rgb(127, 127, 127);
+}
+.name-moto{
+    all:inherit;
+    width: 200px;
+    height: 20px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.name-moto:hover{
+    background-color: rgba(191, 191, 191, 0.414);
+}
+.name-moto:focus{
+    border: 3px solid rgb(177, 134, 134);
+    box-shadow: 0 0 20px rgb(224, 159, 159);
+    border-radius: 4px;
+}
+.moto-description{
+    all:inherit;
+    width: 200px;
+    height: 300px;
+    border: 2px solid gray;
+    border-radius: 3px;
+    transition: 0.3s ease;
+}
+.moto-description:hover{
+    background-color: rgba(191, 191, 191, 0.414);
+}
+.moto-description:focus{
+    border: 3px solid rgb(177, 134, 134);
+    box-shadow: 0 0 20px rgb(224, 159, 159);
+    border-radius: 4px;
+}
+
+.submit{
+    all:inherit;
+    margin-bottom: 20px;
+    width: 100px;
+    height: 20px;
+    border: 2px solid gray;
+    padding: 5px 0;
+    transition: 0.3s ease;
+}
+.submit:hover{
+    background-color: rgba(0, 0, 0, 0.245);
+}
+.submit:active{
+    border-top: 4px solid gray;
+    border-bottom: 4px solid gray;
+}
+.file{
+    all:inherit;
+    width: 200px;
+    height: 20px;
+    margin: 20px;
+    font-size: 14px;
+    padding: 2px;
+}
+
+        /* footer*/
+.footer{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(66, 16, 16);
+}
+
+.footer-container{
+    display: flex;
+    text-align: center;
+    width: 1080px;
+    justify-content: center;
+    color: white;
+    font-family: 'Russo one';
+    font-size: 14px;
+    justify-content: space-around;
+}
+
+.title{
+    font-family: 'Russo one';
+    margin: 0;
+    margin-top: 20px;
+}
+.about-me-cont{
+    display: flex;
+    flex-direction: column;
+    width: 800px;
+    padding: 10px;
+}
+.img-me-blue{
+    width: 250px;
+    height: 300px;
+    padding-right: 10px;
+    border-right: 2px solid black;
+    border-radius: 10px;
+}
+.me-and-bluebird{
+    display: flex;
+    align-items: center;
+}
+.me-and-blue-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'Russo one';
+    padding-left: 20px;
+}
+.me-and-moto {
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    align-items: center;
+}
+.img-me-moto {
+    width: 250px;
+    height: 300px;
+    padding-left: 10px;
+    border-left: 2px solid black;
+    border-radius: 10px;
+}
+.me-and-moto-txt{
+    display: flex;
+    flex-direction: column;
+    text-align: justify;
+    font-family: 'Russo one';
+    padding-right: 20px;
+}
+
+.contacts{
+    display: flex;
+    flex-wrap: wrap;
+    width: 200px;
+    height: 50px;
+
+}
+.icon-c{
+    display: flex;
+    flex-direction: row;
+    text-align: center;
+    align-items: center;
+}
+.icons{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+.cont {
+    display: flex;
+    flex-direction: row;
+    width: 40px;
+    height: 40px;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+}
+.content-container-about{
+    background-color: white;
+    flex-direction: column; 
+    justify-content: center; 
+    align-items: center; 
+    text-align: center; 
+    width: auto; 
+    border-radius: 10px;
+    margin-bottom: 10px;
+}
+.inst-icon{
+    background-color:rgba(159, 159, 159, 0.749);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.inst-icon:hover{
+    background-color: rgb(68, 68, 0);
+}
+.whatsapp-icon{
+    background-color:rgba(159, 159, 159, 0.749);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.whatsapp-icon:hover{
+    background-color: rgb(57, 148, 57);
+}
+.tt-icon{
+    background-color:rgba(159, 159, 159, 0.749);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.tt-icon:hover{
+    background-color: black;
+}
+
+.yt-icon{
+    background-color:rgba(159, 159, 159, 0.749);
+    padding: 5px;
+    border-radius: 5px;
+    transition: 0.3s ease;
+}
+.yt-icon:hover{
+    background-color: red;
+}
+
+@media (max-width: 780px){
+    .header-container{
+        max-width: 700px;
+        height: 100px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+    .menu{
+        display: none;
+    }
+    .burger-menu {
+        display: flex;
+    }
+    .content-container{
+        max-width: 700px;
+    }
+    .content-container-about{
+        max-width: 600px;
+    }
+    .about-me-cont{
+        max-width: 600px;
+        flex-wrap: wrap;
+    }
+    .img-me-blue{
+        max-width: 150px;
+        max-height: 200px;
+    }
+    .me-and-blue-txt{
+        max-width: 350px;
+        font-size: 14px;
+    }
+    .img-me-moto{
+        max-width: 150px;
+        max-height: 200px;
+        margin-right: 20px;
+    }
+    .me-and-moto-txt{
+        max-width: 350px;
+        font-size: 14px;
+    }
+    .me-and-moto{
+        max-width: 600px;
+    }
+    .me-and-bluebird{
+        max-width: 600px;
+    }
+}
